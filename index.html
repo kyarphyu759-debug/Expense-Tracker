@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MM-EN Translator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="top-section">
+      <h1>MM-EN Translator</h1>
+      <div class="language-selector">
+        <div class="language-card" id="source-language">
+          <span>English</span>
+        </div>
+        <button class="swap-button" id="swap-btn" aria-label="Swap translation direction">↔️</button>
+        <div class="language-card" id="target-language">
+          <span>Myanmar</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="middle-section">
+      <div class="textarea-pane">
+        <label class="textarea-label" for="input-text">Input Text</label>
+        <textarea id="input-text" placeholder="Type English or Myanmar text here..."></textarea>
+      </div>
+      <div class="textarea-pane">
+        <label class="textarea-label" for="output-text">Translated Text</label>
+        <textarea id="output-text" readonly placeholder="Translation appears here..."></textarea>
+      </div>
+    </section>
+
+    <section class="bottom-section">
+      <button class="action-button translate-button" id="translate-btn">Translate</button>
+      <div class="action-group">
+        <button class="icon-button" id="copy-btn" aria-label="Copy translated text">📋</button>
+        <button class="icon-button clear-button" id="clear-btn" aria-label="Clear text">✕</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
